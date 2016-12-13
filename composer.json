@@ -19,7 +19,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Spark\\": "src/"
+            "Spark\\": "src/",
+            "SparkUnit\\": "tests/"
         }
     }
 }
