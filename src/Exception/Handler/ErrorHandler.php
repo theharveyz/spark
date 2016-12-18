@@ -106,7 +106,7 @@ class ErrorHandler implements ErrorHandlerInterface
     public static function getErrorResponseContent(Error $err)
     {
         $arr = [
-            'code' => $err->exception ? $err->exception->getCode() : $err->type,
+            'errorCode' => $err->exception ? $err->exception->getCode() : $err->type,
             'message' => $err->message,
             'name' => $err->exception ? get_class($err->exception) : $err->errorType,
         ];
